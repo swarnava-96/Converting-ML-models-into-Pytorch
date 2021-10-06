@@ -1,1 +1,6 @@
 # Converting-ML-models-into-Pytorch
+Hummingbird is a library for compiling trained traditional ML models into tensor computations. Hummingbird allows users to seamlessly leverage neural network frameworks (such as PyTorch) to accelerate traditional ML models. Thanks to Hummingbird, users can benefit from: (1) all the current and future optimizations implemented in neural network frameworks; (2) native hardware acceleration; (3) having a unique platform to support for both traditional and neural network models; and have all of this (4) without having to re-engineer their models.
+
+Currently, you can use Hummingbird to convert your trained traditional ML models into PyTorch, TorchScript, ONNX, and TVM). Hummingbird supports a variety of ML models and featurizers. These models include scikit-learn Decision Trees and Random Forest, and also LightGBM and XGBoost Classifiers/Regressors. Support for other neural network backends and models is on our roadmap.
+
+Hummingbird also provides a convenient uniform "inference" API following the Sklearn API. This allows swapping Sklearn models with Hummingbird-generated ones without having to change the inference code. By converting the models to PyTorch and TorchScript it also becomes possible to serve them using TorchServe.[More](https://github.com/microsoft/hummingbird).
